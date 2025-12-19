@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import Header from './components/Header.tsx';
-import CameraView from './components/CameraView.tsx';
-import ResultDisplay from './components/ResultDisplay.tsx';
-import { analyzeIngredientsAndGetRecipes } from './geminiService.ts';
-import { AnalysisResponse } from './types.ts';
+import Header from './components/Header';
+import CameraView from './components/CameraView';
+import ResultDisplay from './components/ResultDisplay';
+import { analyzeIngredientsAndGetRecipes } from './geminiService';
+import { AnalysisResponse } from './types';
 
 const App: React.FC = () => {
   const [isProcessing, setIsProcessing] = useState(false);
